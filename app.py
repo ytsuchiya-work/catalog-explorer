@@ -25,7 +25,7 @@ def get_warehouses():
     """SQLウェアハウス一覧を取得"""
     w = get_workspace_client()
     warehouses = list(w.warehouses.list())
-    return [(wh.id, wh.name) for wh in warehouses if wh.state.value in ["RUNNING", "STARTING"]]
+    return [(wh.id, wh.name) for wh in warehouses]
 
 
 def get_sample_data(warehouse_id: str, table_name: str, limit: int = 100, exclude_binary: bool = True):
