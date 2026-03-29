@@ -1,0 +1,7 @@
+streamlit
+databricks-sdk
+pandas
+requests
+pyarrow
+pillow
+numpy
